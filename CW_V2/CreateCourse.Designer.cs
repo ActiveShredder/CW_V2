@@ -73,6 +73,7 @@
             this.Name = "CreateCourse";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Create Course";
+            this.Load += new System.EventHandler(this.CreateCourse_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

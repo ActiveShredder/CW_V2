@@ -14,10 +14,12 @@ namespace CW_V2
 {
     public partial class CreateCourse : Form
     {
+        Home home;
         PredictionEngineImpl pre = PredictionEngineImpl.getEngineInstance();
-        public CreateCourse()
+        public CreateCourse(Home home)
         {
             InitializeComponent();
+            this.home = home;
         }
 
         private void btnOk_Click(object sender, EventArgs e)
@@ -25,6 +27,13 @@ namespace CW_V2
             Course cw = new Course();
             cw.CourseName = txtCourseName.Text;
             pre.addCourse(cw);
+            home.Enabled = true;
+            this.Close();
+        }
+
+        private void CreateCourse_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

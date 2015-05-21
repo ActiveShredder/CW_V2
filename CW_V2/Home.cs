@@ -23,9 +23,10 @@ namespace CW_V2
 
         private void btnAddCourse_Click(object sender, EventArgs e)
         {
-            //CreateCourse course = new CreateCourse();
-            //course.Show();
-            createLabel("Test", listBox1);
+            CreateCourse course = new CreateCourse(this);
+            course.Show();
+            this.Enabled = false;
+            //createLabel("Test", listBox1);
         }
 
         private void btnAddLevel_Click(object sender, EventArgs e)
@@ -165,6 +166,59 @@ namespace CW_V2
             rightClickOparetor(listBox4, e);
         }
 
+        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
+        }
+
+        private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Home_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Home_EnabledChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void loadFromDatabase()
+        {
+
+        }
     }
 }
